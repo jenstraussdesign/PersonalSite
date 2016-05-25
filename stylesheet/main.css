@@ -1,0 +1,544 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+.thumbnails {
+  font-size: 0; }
+
+.thumbnails img {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.thumbnails_big {
+  font-size: 0; }
+
+.thumbnails_big img {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.abouthero {
+  background-color: #9e1e62;
+  height: 300px;
+  margin: -26px 0px 0px 0px; }
+
+.aboutmeimage {
+  font-size: 0; }
+
+.aboutmeimage img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 45px 0px; }
+
+.aboutmetext {
+  position: relative;
+  height: auto;
+  width: 90%;
+  font-family: 'montserratlight';
+  padding: 30px 38px; }
+
+.maintext {
+  height: auto;
+  width: 80%;
+  font-family: 'montserratlight';
+  font-size: 18px;
+  line-height: 26px;
+  padding: 15px 45px; }
+
+.mainimages {
+  font-size: 0; }
+
+.mainimages img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20px 0px; }
+
+.header {
+  background-color: #ffffff;
+  height: 120px;
+  position: relative;
+  z-index: 5;
+  border-bottom: 2px dotted #6CAC44;
+  /*-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);*/ }
+
+.logo img {
+  float: left;
+  max-width: 250px;
+  height: auto;
+  overflow: auto;
+  margin: 10px 0px 0px 40px; }
+
+nav {
+  float: right; }
+
+nav a#pull {
+  display: none; }
+
+nav ul li a.current {
+  color: #6CAC44;
+  text-decoration: none; }
+
+nav ul li a:link.current {
+  color: black;
+  text-decoration: none; }
+
+nav ul li a:hover.current {
+  color: #6CAC44;
+  text-decoration: none;
+  border-bottom: 2px dotted #6CAC44;
+  transition: background-color 25s; }
+
+nav ul li a:active.current {
+  color: #000000;
+  text-decoration: none; }
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-family: 'Arimo';
+  font-size: 18px;
+  padding: 15px;
+  margin: 30px 30px 18px 0px; }
+
+#nav-button {
+  display: none; }
+
+nav ul li a {
+  color: black;
+  text-decoration: none; }
+
+nav ul li a:link {
+  color: black;
+  text-decoration: none; }
+
+nav ul li a:hover {
+  color: black;
+  text-decoration: none; }
+
+nav ul li a:hover:after {
+  color: black;
+  text-decoration: none; }
+
+nav ul li a:active {
+  color: #000000;
+  text-decoration: none; }
+
+.borderbottom {
+  display: none; }
+
+.column1_half {
+  max-width: 50%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block; }
+
+.column2_half {
+  max-width: 50%;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block; }
+
+.contact1 {
+  max-width: 450px;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 50px;
+  margin-right: 15px; }
+
+.contact2 {
+  max-width: 450px;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  background: white;
+  margin: 10px 0px 10px 0px;
+  padding: 100px 20px;
+  background-position: cover; }
+
+.name, .orgName, .email, .phone, .messageSection {
+  padding-top: 20px !important;
+  margin: none; }
+
+.column1, .column2, .column3 {
+  max-width: 33.333%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block; }
+
+.column40 {
+  position: fixed;
+  z-index: 10;
+  max-width: 38%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block; }
+
+.column60 {
+  max-width: 58%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 60px 0px 0px 5px; }
+
+.column65 {
+  max-width: 65%;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 60px 0px 0px 5px; }
+
+h1 {
+  font-family: 'Arimo';
+  font-size: 32px;
+  line-height: 36px; }
+
+h1.about1 {
+  color: #000000;
+  font-family: 'Arimo';
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 18px 0px 15px 0px; }
+
+h1.abouthome1 {
+  font-family: 'Arimo';
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 80px 0px 0px 50px; }
+
+h2 {
+  font-family: 'Arimo';
+  font-size: 30px;
+  line-height: 34px;
+  color: #000000; }
+
+h3.maintitle {
+  font-family: 'Arimo';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  margin: 60px 0px 10px 0px; }
+
+h3 {
+  font-family: 'Arimo';
+  font-size: 26px;
+  line-height: 30px;
+  color: #e6e7e8; }
+
+h4.bodytitle {
+  font-family: 'Arimo';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin: 30px 0px -5px 0px; }
+
+h4.abouthome2 {
+  font-family: 'Arimo';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 65%;
+  padding: 0px 50px 0px 50px; }
+
+h4.abouttitle {
+  color: #000000;
+  font-family: 'Arimo';
+  font-size: 20px;
+  line-height: 20px; }
+
+p {
+  color: #000000;
+  font-family: 'Arimo';
+  font-size: 16px;
+  line-height: 24px; }
+
+p.projects {
+  color: #000000;
+  font-family: 'Arimo';
+  font-size: 14px;
+  line-height: 24px; }
+
+p.email {
+  color: #6CAC44;
+  font-family: 'Arimo';
+  font-size: 16px;
+  line-height: 24px;
+  margin: -20px 0px 0px 0px; }
+
+p.email a {
+  color: #6CAC44;
+  font-family: 'Arimo';
+  font-size: 16px;
+  line-height: 24px; }
+
+p.aboutparagraph {
+  font-family: 'Arimo';
+  line-height: 26px;
+  color: #000000; }
+
+h2.journaltext.hide, h2.oxo_packagingtext.hide, h2.dyson_windowtext.hide, h2.derm_brochuretext.hide, h2.drwctext.hide, h2.hipcitytext.hide {
+  display: none !important; }
+
+h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.hide_big, h2.derm_brochuretext_big.hide_big, h2.hipcitytext_big.hide_big {
+  display: none !important; }
+
+.journaltext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.oxo_packagingtext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.dyson_windowtext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.derm_brochuretext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 38%;
+  left: 49%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.drwctext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 35%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.hipcitytext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.ic3401text_big {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.drwctext_big {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 35%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.firsthandtext_big {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.hipcitytext_big {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.pagenavigaton {
+  clear: left;
+  clear: right; }
+
+.previousnext {
+  float: right;
+  margin: 5px 60px 35px 0px; }
+
+.back {
+  float: left;
+  margin: 5px 0px 35px 60px; }
+
+.FormHeader {
+  font-size: 20px;
+  font-family: 'Arimo';
+  color: #6CAC44;
+  margin-left: 0px; }
+
+.footer {
+  clear: left;
+  height: 100px;
+  background-color: #666666;
+  /*		position: absolute;
+  */
+  /*bottom: 0;*/ }
+
+input {
+  margin-bottom: 2px;
+  border: 2px solid #6CAC44;
+  box-sizing: border-box; }
+
+p.previousnexttext {
+  font-size: 16px;
+  font-family: 'Arimo';
+  color: #808284;
+  text-decoration: none; }
+
+p a {
+  font-size: 16px;
+  font-family: 'Arimo';
+  color: #808284;
+  text-decoration: none; }
+
+body, .wrapper {
+  background-color: #f7f9f9;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrapper_about {
+  clear: left;
+  background-color: #f7f9f9; }
+
+.borderbottom {
+  display: none; }
+
+.linebreak {
+  border-bottom: 1px solid #a7a9ab; }
+
+ul.projects {
+  color: #000000;
+  font-family: 'Arimo';
+  font-size: 14px;
+  line-height: 20px; }
+
+p.backlink a {
+  color: #6CAC44;
+  font-family: 'Arimo';
+  font-size: 16px;
+  text-decoration: underline; }
+
+.resumelink {
+  clear: left;
+  margin: 40px 50px; }
+
+form {
+  margin-left: 5%; }
+
+#message {
+  height: 100px !important;
+  width: 300px; }
+
+.resume {
+  float: left;
+  overflow: auto;
+  margin: 40px 60px; }
+
+.resume a {
+  font-family: 'Arimo';
+  color: #6CAC44;
+  text-decoration: none; }
+
+.resumecurrent a {
+  font-family: 'Arimo'; }
+
+.socialicons {
+  float: right;
+  overflow: auto;
+  margin: 20px 50px 20px 0px; }
+
+.socialicons ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 5px; }
+
+/*# sourceMappingURL=main.css.map */

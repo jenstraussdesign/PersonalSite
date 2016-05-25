@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+@import 'partials/images';
+@import 'partials/nav';
+@import 'partials/colunms';
+@import 'partials/headers';
+
+
+
+
+	body, .wrapper {
+		background-color: #f7f9f9;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.wrapper_about {
+		clear: left;
+		background-color: #f7f9f9;
+	}
+
+
+	.borderbottom {
+		display: none;
+	}
+
+
+	.linebreak {
+		border-bottom: 1px solid #a7a9ab;
+	}
+
+
+
+	ul.projects {
+		color: #000000;
+		font-family: 'Arimo';
+		font-size: 14px;
+		line-height: 20px;
+
+	}
+
+
+	p.backlink a{
+		color: #6CAC44;
+		font-family: 'Arimo';
+		font-size: 16px;
+		text-decoration: underline;
+	}
+
+	.resumelink {
+		clear: left;
+		margin: 40px 50px;
+	}
+
+	form {
+		margin-left: 5%;
+	}
+
+	#message{
+		height: 100px !important;
+		width: 300px;
+	}
+
+
+
+	.resume {
+		float: left;
+		overflow: auto;
+		margin: 40px 60px;
+
+	}
+
+	.resume a {
+		font-family: 'Arimo';
+		color: #6CAC44;
+		text-decoration: none;
+
+	}
+
+	.resumecurrent a{
+		font-family: 'Arimo';
+	}
+
+	.socialicons {
+		float: right;
+		overflow: auto;
+		margin: 20px 50px 20px 0px;
+	}
+
+	.socialicons ul li {
+		list-style: none;
+		display: inline-block;
+		padding: 0px 5px;
+	}
+
+
