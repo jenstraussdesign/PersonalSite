@@ -2,23 +2,73 @@
 		display: none;
 	}
 
+	.row {
+		/* mobile first, no styles needed */
+	}
 	.column1_half {
-		max-width: 50%;
+		/*max-width: 50%;*/
 		height: auto;
 		float: left;
 		overflow: hidden;
 		position: relative;
 		display: block;
+/*		border: 1px solid green;
+*/		margin: 20px 0px;
 	}
 
 	.column2_half {
-		max-width: 50%;
-		height: 300px;
+		/*max-width: 50%;*/
+/*		height: 300px;
+*/		float: left;
+		overflow: hidden;
+		position: relative;
+		display: block;
+/*		border: 1px solid red;
+*/		margin: 20px 0px;
+
+	}
+
+	.resume_column1_half, .resume_column2_half {
+		/*max-width: 50%;*/
+		height: auto;
 		float: left;
 		overflow: hidden;
 		position: relative;
 		display: block;
+/*		border: 1px solid green;
+*/		margin: 20px 10px;
 	}
+
+	@include breakpoint(medium){
+		.row {
+			margin: 0 auto;
+/*			border: 1px solid blue;
+*/			overflow: auto;
+			max-width: 960px;
+			/*max-width: 90%;*/
+		}
+
+		.column1_half,
+		.column2_half {
+			max-width: 49%; /* content controls, with a MAX of 49%*/
+			/*width: 49%;*/ /* always 49% regardless of content */
+/*			border: 1px solid red;
+*/		}
+
+		.resume_column2_half {
+			width: 60%; /* content controls, with a MAX of 49%*/
+			/*width: 49%;*/ /* always 49% regardless of content */
+/*			border: 1px solid red;
+*/		}
+		
+		.resume_column1_half {
+			width: 34%; /* content controls, with a MAX of 49%*/
+			/*width: 49%;*/ /* always 49% regardless of content */
+/*			border: 1px solid red;
+*/		}
+	}
+
+
 
 	.contact1{
 		max-width: 450px;
@@ -28,6 +78,7 @@
 		display: block;
 		margin-bottom: 50px;
 		margin-right: 15px;
+		margin-left: 15px;
 
 	}
 
@@ -38,12 +89,14 @@
 		overflow: hidden;
 		display: block;
 		position: relative;
-		background: white;
-		margin: 10px 0px 10px 0px;
-	    padding: 100px 20px;
+		background: #e2e3e4;
+/*		margin: 10px 0px 10px 0px;
+*/	    padding: 100px 100px 150px;
 	    background-position: cover;
 
 	}
+
+
 
 	.name, .orgName, .email, .phone,.messageSection{
 		padding-top: 20px !important;
@@ -59,33 +112,3 @@
 		display: block;
 	}
 
-	.column40 {
-		position: fixed;
-		z-index: 10;
-		max-width: 38%;
-		height: auto;
-		float: left;
-		overflow: hidden;
-		position: relative;
-		display: block;
-	}
-
-	.column60 {
-		max-width: 58%;
-		height: auto;
-		float: left;
-		overflow: hidden;
-		position: relative;
-		display: block;
-		margin: 60px 0px 0px 5px;
-	}
-
-	.column65 {
-		max-width: 65%;
-		height: auto;
-		float: left;
-		overflow: hidden;
-		position: relative;
-		display: block;
-		margin: 60px 0px 0px 5px;
-	}

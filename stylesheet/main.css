@@ -1,4 +1,51 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .thumbnails {
   font-size: 0; }
 
@@ -6,19 +53,6 @@
   width: 100%;
   height: 100%;
   position: relative; }
-
-.thumbnails_big {
-  font-size: 0; }
-
-.thumbnails_big img {
-  width: 100%;
-  height: 100%;
-  position: relative; }
-
-.abouthero {
-  background-color: #9e1e62;
-  height: 300px;
-  margin: -26px 0px 0px 0px; }
 
 .aboutmeimage {
   font-size: 0; }
@@ -33,13 +67,12 @@
   position: relative;
   height: auto;
   width: 90%;
-  font-family: 'montserratlight';
-  padding: 30px 38px; }
+  padding: 30px 30px; }
 
 .maintext {
   height: auto;
   width: 80%;
-  font-family: 'montserratlight';
+  font-family: 'Arimo';
   font-size: 18px;
   line-height: 26px;
   padding: 15px 45px; }
@@ -55,20 +88,18 @@
 
 .header {
   background-color: #ffffff;
-  height: 120px;
+  height: 100px;
   position: relative;
   z-index: 5;
-  border-bottom: 2px dotted #6CAC44;
-  /*-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);*/ }
+  border-bottom: 2px dotted #6CAC44; }
 
 .logo img {
   float: left;
   max-width: 250px;
   height: auto;
   overflow: auto;
-  margin: 10px 0px 0px 40px; }
+  margin: 10px 0px 0px 40px;
+  position: absolute; }
 
 nav {
   float: right; }
@@ -125,25 +156,94 @@ nav ul li a:active {
   color: #000000;
   text-decoration: none; }
 
+/*these are the burger menu icon properties*/
+/*	nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
+	nav label:hover{cursor:pointer;}
+	nav label:before{
+		font-family: FontAwesome;
+		font-size: 24px;
+		content: &#9776;
+		display: inline-block;
+	  	-webkit-transform: rotate(90deg);
+	  	-moz-transform: rotate(90deg);
+	  	-o-transform: rotate(90deg);
+	  	-ms-transform: rotate(90deg);
+	  	transform: rotate(90deg);
+		text-align: center;
+	}*/
 .borderbottom {
   display: none; }
 
+.row {
+  /* mobile first, no styles needed */ }
+
 .column1_half {
-  max-width: 50%;
+  /*max-width: 50%;*/
   height: auto;
   float: left;
   overflow: hidden;
   position: relative;
-  display: block; }
+  display: block;
+  /*		border: 1px solid green;
+  */
+  margin: 20px 0px; }
 
 .column2_half {
-  max-width: 50%;
-  height: 300px;
+  /*max-width: 50%;*/
+  /*		height: 300px;
+  */
   float: left;
   overflow: hidden;
   position: relative;
-  display: block; }
+  display: block;
+  /*		border: 1px solid red;
+  */
+  margin: 20px 0px; }
 
+.resume_column1_half, .resume_column2_half {
+  /*max-width: 50%;*/
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  /*		border: 1px solid green;
+  */
+  margin: 20px 10px; }
+
+@media (min-width: 800px) {
+  .row {
+    margin: 0 auto;
+    /*			border: 1px solid blue;
+    */
+    overflow: auto;
+    max-width: 960px;
+    /*max-width: 90%;*/ }
+
+  .column1_half,
+  .column2_half {
+    max-width: 49%;
+    /* content controls, with a MAX of 49%*/
+    /*width: 49%;*/
+    /* always 49% regardless of content */
+    /*			border: 1px solid red;
+    */ }
+
+  .resume_column2_half {
+    width: 60%;
+    /* content controls, with a MAX of 49%*/
+    /*width: 49%;*/
+    /* always 49% regardless of content */
+    /*			border: 1px solid red;
+    */ }
+
+  .resume_column1_half {
+    width: 34%;
+    /* content controls, with a MAX of 49%*/
+    /*width: 49%;*/
+    /* always 49% regardless of content */
+    /*			border: 1px solid red;
+    */ } }
 .contact1 {
   max-width: 450px;
   height: auto;
@@ -151,7 +251,8 @@ nav ul li a:active {
   overflow: hidden;
   display: block;
   margin-bottom: 50px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-left: 15px; }
 
 .contact2 {
   max-width: 450px;
@@ -160,9 +261,10 @@ nav ul li a:active {
   overflow: hidden;
   display: block;
   position: relative;
-  background: white;
-  margin: 10px 0px 10px 0px;
-  padding: 100px 20px;
+  background: #e2e3e4;
+  /*		margin: 10px 0px 10px 0px;
+  */
+  padding: 100px 100px 150px;
   background-position: cover; }
 
 .name, .orgName, .email, .phone, .messageSection {
@@ -176,34 +278,6 @@ nav ul li a:active {
   overflow: hidden;
   position: relative;
   display: block; }
-
-.column40 {
-  position: fixed;
-  z-index: 10;
-  max-width: 38%;
-  height: auto;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  display: block; }
-
-.column60 {
-  max-width: 58%;
-  height: auto;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  display: block;
-  margin: 60px 0px 0px 5px; }
-
-.column65 {
-  max-width: 65%;
-  height: auto;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  display: block;
-  margin: 60px 0px 0px 5px; }
 
 h1 {
   font-family: 'Arimo';
@@ -230,7 +304,15 @@ h2 {
   font-family: 'Arimo';
   font-size: 30px;
   line-height: 34px;
-  color: #000000; }
+  color: #6CAC44; }
+
+h2.resumeheader {
+  font-family: 'Arimo';
+  font-size: 20px;
+  line-height: 34px;
+  color: #6CAC44;
+  /*		border-bottom: 2px dotted #6CAC44;
+  */ }
 
 h3.maintitle {
   font-family: 'Arimo';
@@ -254,6 +336,23 @@ h4.bodytitle {
   color: #000000;
   margin: 30px 0px -5px 0px; }
 
+h4.jobtitle {
+  font-family: 'Arimo';
+  font-weight: 700;
+  border-bottom: 2px dotted #6CAC44;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6CAC44;
+  margin: 30px 0px 5px 0px; }
+
+a.company {
+  font-family: 'Arimo' !important;
+  font-weight: 700 !important;
+  font-size: 16px;
+  line-height: 20px;
+  color: black !important;
+  margin: 30px 0px -5px 0px; }
+
 h4.abouthome2 {
   font-family: 'Arimo';
   font-size: 18px;
@@ -275,14 +374,19 @@ p {
   font-size: 16px;
   line-height: 24px; }
 
-p.projects {
-  color: #000000;
-  font-family: 'Arimo';
-  font-size: 14px;
-  line-height: 24px; }
+	/*p.projects {
+		color: #000000;
+		font-family: 'Arimo';
+		font-size: 14px;
+		line-height: 24px;
+
+	}*/
+.illustraion_img {
+  display: block;
+  margin: 0 auto; }
 
 p.email {
-  color: #6CAC44;
+  color: #a7a9ab;
   font-family: 'Arimo';
   font-size: 16px;
   line-height: 24px;
@@ -291,6 +395,7 @@ p.email {
 p.email a {
   color: #6CAC44;
   font-family: 'Arimo';
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px; }
 
@@ -299,33 +404,31 @@ p.aboutparagraph {
   line-height: 26px;
   color: #000000; }
 
-h2.journaltext.hide, h2.oxo_packagingtext.hide, h2.dyson_windowtext.hide, h2.derm_brochuretext.hide, h2.drwctext.hide, h2.hipcitytext.hide {
+h2.amtraktext.hide, h2.cpa_careertext.hide, h2.oxo_packagingtext.hide, h2.journaltext.hide,
+h2.PMA_signagetext.hide, h2.dyson_windowtext.hide, h2.PMA_pawstext.hide, h2.PMS_bustext.hide {
   display: none !important; }
 
-h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.hide_big, h2.derm_brochuretext_big.hide_big, h2.hipcitytext_big.hide_big {
-  display: none !important; }
-
-.journaltext {
+.PMA_signagetext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 40%;
-  left: 50%;
-  top: 0;
+  height: 22%;
+  left: 49%;
+  top: 0%;
   transform: translate(-50%, 50%);
   -webkit-transform: translate(-50%, 50%);
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.oxo_packagingtext {
+.amtraktext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 40%;
-  left: 50%;
-  top: 50%;
+  height: 22%;
+  left: 49%;
+  top: 0%;
   transform: translate(-50%, 50%);
   -webkit-transform: translate(-50%, 50%);
   -moz-transform: translate(-50%, 50%);
@@ -336,7 +439,7 @@ h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 40%;
+  height: 65%;
   left: 50%;
   top: 0;
   transform: translate(-50%, 50%);
@@ -344,12 +447,25 @@ h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.derm_brochuretext {
+.cpa_careertext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 38%;
+  height: 65%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.pawstext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 20%;
   left: 49%;
   top: 50%;
   transform: translate(-50%, 50%);
@@ -357,25 +473,12 @@ h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.drwctext {
+.oxo_packagingtext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 35%;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
-
-.hipcitytext {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 40%;
+  height: 22%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, 50%);
@@ -383,12 +486,25 @@ h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.ic3401text_big {
+.PMS_bustext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 40%;
+  height: 69%;
+  left: 49%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.journaltext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 172%;
   left: 50%;
   top: 0;
   transform: translate(-50%, 50%);
@@ -396,57 +512,21 @@ h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.drwctext_big {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 35%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
+	/*
+	.pagenavigaton{
+		clear: left;
+		clear: right;
+	}
 
-.firsthandtext_big {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 40%;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
+	.previousnext {
+		float: right;
+		margin: 5px 60px 35px 0px;
+	}
 
-.hipcitytext_big {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 40%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
-
-.pagenavigaton {
-  clear: left;
-  clear: right; }
-
-.previousnext {
-  float: right;
-  margin: 5px 60px 35px 0px; }
-
-.back {
-  float: left;
-  margin: 5px 0px 35px 60px; }
-
+	.back {
+		float: left;
+		margin: 5px 0px 35px 60px;
+	}*/
 .FormHeader {
   font-size: 20px;
   font-family: 'Arimo';
@@ -456,7 +536,7 @@ h2.journaltext_big.hide_big, h2.dyson_window_big.hide_big, h2.oxo_packagingtext.
 .footer {
   clear: left;
   height: 100px;
-  background-color: #666666;
+  background-color: #e2e3e4;
   /*		position: absolute;
   */
   /*bottom: 0;*/ }
@@ -466,16 +546,16 @@ input {
   border: 2px solid #6CAC44;
   box-sizing: border-box; }
 
-p.previousnexttext {
-  font-size: 16px;
-  font-family: 'Arimo';
-  color: #808284;
-  text-decoration: none; }
-
+/*p.previousnexttext {
+	font-size: 16px;
+	font-family: 'Arimo';
+	color: #6CAC44;
+	text-decoration: none;
+}*/
 p a {
   font-size: 16px;
   font-family: 'Arimo';
-  color: #808284;
+  color: #6CAC44;
   text-decoration: none; }
 
 body, .wrapper {
@@ -519,9 +599,11 @@ form {
   width: 300px; }
 
 .resume {
-  float: left;
-  overflow: auto;
-  margin: 40px 60px; }
+  margin-left: 40px;
+  position: relative;
+  width: 150px;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .resume a {
   font-family: 'Arimo';
@@ -533,8 +615,12 @@ form {
 
 .socialicons {
   float: right;
-  overflow: auto;
-  margin: 20px 50px 20px 0px; }
+  /*		margin: 20px 50px 20px 0px;
+  */
+  position: relative;
+  width: 200px;
+  top: 50%;
+  transform: translateY(-75%); }
 
 .socialicons ul li {
   list-style: none;

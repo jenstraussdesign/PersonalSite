@@ -1,8 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+@import 'partials/reset';
+@import 'partials/media-queries';
 @import 'partials/images';
 @import 'partials/nav';
 @import 'partials/colunms';
 @import 'partials/headers';
+
 
 
 
@@ -66,9 +69,11 @@
 
 
 	.resume {
-		float: left;
-		overflow: auto;
-		margin: 40px 60px;
+		margin-left: 40px;
+		position: relative;
+		width: 150px;
+		top: 50%;
+		transform: translateY(-50%);
 
 	}
 
@@ -85,8 +90,11 @@
 
 	.socialicons {
 		float: right;
-		overflow: auto;
-		margin: 20px 50px 20px 0px;
+/*		margin: 20px 50px 20px 0px;
+*/		position: relative;
+		width: 200px;
+		top: 50%;
+		transform: translateY(-75%);
 	}
 
 	.socialicons ul li {
