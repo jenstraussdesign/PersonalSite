@@ -121,6 +121,7 @@
 	.illustraion_img{
 		 display: block;
 		 margin: 0 auto;
+		 padding-top: 10px;
 
 	}
 
@@ -147,12 +148,12 @@
 	}
 
 	h2.amtraktext.hide, h2.cpa_careertext.hide, h2.oxo_packagingtext.hide, h2.journaltext.hide, 
-	h2.PMA_signagetext.hide, h2.dyson_windowtext.hide, h2.PMA_pawstext.hide, h2.PMS_bustext.hide {
+	h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bustext.hide {
 		display: none!important;
 	}
 
 
-	.PMA_signagetext {
+	.pma_signagetext {
 		position: absolute;
 		overflow: hidden;
 		text-align: center;
@@ -237,7 +238,7 @@
 	}
 
 
-	.PMS_bustext {
+	.pma_bustext {
 		position: absolute;
 		overflow: hidden;
 		text-align: center;

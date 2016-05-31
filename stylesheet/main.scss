@@ -16,6 +16,9 @@
 		height: 100%;
 		margin: 0;
 		padding: 0;
+
+		@include breakpoint(small){
+		}
 	}
 
 
@@ -90,8 +93,7 @@
 
 	.socialicons {
 		float: right;
-/*		margin: 20px 50px 20px 0px;
-*/		position: relative;
+		position: relative;
 		width: 200px;
 		top: 50%;
 		transform: translateY(-75%);

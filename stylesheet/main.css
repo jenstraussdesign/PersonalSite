@@ -156,21 +156,30 @@ nav ul li a:active {
   color: #000000;
   text-decoration: none; }
 
-/*these are the burger menu icon properties*/
-/*	nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
-	nav label:hover{cursor:pointer;}
-	nav label:before{
-		font-family: FontAwesome;
-		font-size: 24px;
-		content: &#9776;
-		display: inline-block;
-	  	-webkit-transform: rotate(90deg);
-	  	-moz-transform: rotate(90deg);
-	  	-o-transform: rotate(90deg);
-	  	-ms-transform: rotate(90deg);
-	  	transform: rotate(90deg);
-		text-align: center;
-	}*/
+.nav-ham {
+  color: black;
+  text-decoration: none;
+  font-size: 50px; }
+  .nav-ham:hover {
+    color: #6CAC44; }
+
+.is-mobile {
+  display: block; }
+  @media (min-width: 800px) {
+    .is-mobile {
+      display: none; } }
+
+.clearfix {
+  display: none; }
+  @media (min-width: 800px) {
+    .clearfix {
+      display: block; }
+      .clearfix li {
+        float: left; } }
+  .clearfix li {
+    /* all link within .nav-main*/
+    border-bottom: 1px soild black; }
+
 .borderbottom {
   display: none; }
 
@@ -383,7 +392,8 @@ p {
 	}*/
 .illustraion_img {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 10px; }
 
 p.email {
   color: #a7a9ab;
@@ -405,10 +415,10 @@ p.aboutparagraph {
   color: #000000; }
 
 h2.amtraktext.hide, h2.cpa_careertext.hide, h2.oxo_packagingtext.hide, h2.journaltext.hide,
-h2.PMA_signagetext.hide, h2.dyson_windowtext.hide, h2.PMA_pawstext.hide, h2.PMS_bustext.hide {
+h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bustext.hide {
   display: none !important; }
 
-.PMA_signagetext {
+.pma_signagetext {
   position: absolute;
   overflow: hidden;
   text-align: center;
@@ -486,7 +496,7 @@ h2.PMA_signagetext.hide, h2.dyson_windowtext.hide, h2.PMA_pawstext.hide, h2.PMS_
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.PMS_bustext {
+.pma_bustext {
   position: absolute;
   overflow: hidden;
   text-align: center;
@@ -615,8 +625,6 @@ form {
 
 .socialicons {
   float: right;
-  /*		margin: 20px 50px 20px 0px;
-  */
   position: relative;
   width: 200px;
   top: 50%;

@@ -85,20 +85,41 @@
 		text-decoration: none;
 	}
 
-		/*these are the burger menu icon properties*/
-/*	nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
-	nav label:hover{cursor:pointer;}
-	nav label:before{
-		font-family: FontAwesome;
-		font-size: 24px;
-		content: &#9776;
-		display: inline-block;
-	  	-webkit-transform: rotate(90deg);
-	  	-moz-transform: rotate(90deg);
-	  	-o-transform: rotate(90deg);
-	  	-ms-transform: rotate(90deg);
-	  	transform: rotate(90deg);
-		text-align: center;
-	}*/
 
-  
+
+.nav-ham{
+	color: black;
+	text-decoration: none;
+	font-size: 50px;
+
+	&:hover {
+		color: #6CAC44;
+	}
+}
+
+.is-mobile{
+	display: block;
+
+	@include breakpoint(medium) {
+	display: none;
+	}
+}
+ .clearfix{
+	display: none;
+
+	@include breakpoint(medium){
+		display: block;
+
+		li{
+			float: left;
+		}
+	}
+
+
+	li {
+		/* all link within .nav-main*/
+		border-bottom: 1px soild black;
+
+		
+	}
+}
