@@ -1,18 +1,19 @@
 $(document).ready(function(){
 
   $('.js-nav').on('click', function(){
+    
     $('.nav-main').slideToggle();
   });
 
     $(window).on('resize', function(){
-    var w = $(window).width();
-    // console.log ('width: ' + w);
+        var w = $(window).width();
+        // console.log ('width: ' + w);
 
-    if(w > 800 && $('.nav.main').is(':hidden')){
-        console.log('found it');
-        $('.nav-main').removeAttr('style');
-    }
-})
+        if(w > 800 && $('.nav-main').is(':hidden')){
+            console.log('found it');
+            $('.nav-main').removeAttr('style');
+        }
+    });
 
 
 
@@ -117,22 +118,4 @@ $(document).ready(function(){
     }); 
 
 
-    
-
-    var pull = $('#pull');
-        menu = $('nav ul');
-        menuHeight = menu.height();
- 
-    // $("#nav-button").on('click', function(e) {
-    //     e.preventDefault();
-    //     menu.slideToggle();
-    // });
-
-    $(window).resize(function(){
-    var w = $(window).width();
-    if(w > 320 && menu.is(':hidden')) {
-        menu.removeAttr('style');
-    }
-    });
-
-      }); 
+}); // closes doc.ready

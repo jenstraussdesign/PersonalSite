@@ -1,4 +1,17 @@
-	.thumbnails {
+
+	.illustration_img{
+		 display: none;
+		 margin: 0 auto;
+		 padding-top: 10px;
+
+		 @include breakpoint(medium) {
+			display: block;
+		 }
+
+	}
+
+
+		.thumbnails {
 		font-size: 0;
 	}
 

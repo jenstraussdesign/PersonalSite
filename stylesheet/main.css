@@ -46,6 +46,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.illustration_img {
+  display: none;
+  margin: 0 auto;
+  padding-top: 10px; }
+  @media (min-width: 800px) {
+    .illustration_img {
+      display: block; } }
+
 .thumbnails {
   font-size: 0; }
 
@@ -102,7 +110,15 @@ table {
   position: absolute; }
 
 nav {
-  float: right; }
+  display: none;
+  float: none;
+  clear: both;
+  padding-top: 53px; }
+  @media (min-width: 800px) {
+    nav {
+      display: block;
+      float: right;
+      padding-top: 0; } }
 
 nav a#pull {
   display: none; }
@@ -126,19 +142,28 @@ nav ul li a:active.current {
   text-decoration: none; }
 
 nav ul li {
-  display: inline-block;
   list-style: none;
   font-family: 'Arimo';
-  font-size: 18px;
+  font-size: 30px;
   padding: 15px;
-  margin: 30px 30px 18px 0px; }
-
-#nav-button {
-  display: none; }
+  text-align: center;
+  border-bottom: 2px dotted #6CAC44;
+  background: white;
+  /*clear: both;*/ }
+  @media (min-width: 800px) {
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      padding: 15px;
+      margin: 30px 30px 18px 0px;
+      /*background: white;*/
+      border-bottom: none;
+      font-size: 18px; } }
 
 nav ul li a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 nav ul li a:link {
   color: black;
@@ -164,21 +189,11 @@ nav ul li a:active {
     color: #6CAC44; }
 
 .is-mobile {
-  display: block; }
+  display: block;
+  float: right; }
   @media (min-width: 800px) {
     .is-mobile {
       display: none; } }
-
-.clearfix {
-  display: none; }
-  @media (min-width: 800px) {
-    .clearfix {
-      display: block; }
-      .clearfix li {
-        float: left; } }
-  .clearfix li {
-    /* all link within .nav-main*/
-    border-bottom: 1px soild black; }
 
 .borderbottom {
   display: none; }
@@ -319,9 +334,7 @@ h2.resumeheader {
   font-family: 'Arimo';
   font-size: 20px;
   line-height: 34px;
-  color: #6CAC44;
-  /*		border-bottom: 2px dotted #6CAC44;
-  */ }
+  color: #6CAC44; }
 
 h3.maintitle {
   font-family: 'Arimo';
@@ -382,18 +395,6 @@ p {
   font-family: 'Arimo';
   font-size: 16px;
   line-height: 24px; }
-
-	/*p.projects {
-		color: #000000;
-		font-family: 'Arimo';
-		font-size: 14px;
-		line-height: 24px;
-
-	}*/
-.illustraion_img {
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px; }
 
 p.email {
   color: #a7a9ab;
