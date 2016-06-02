@@ -415,16 +415,29 @@ p.aboutparagraph {
   line-height: 26px;
   color: #000000; }
 
-h2.amtraktext.hide, h2.cpa_careertext.hide, h2.oxo_packagingtext.hide, h2.journaltext.hide,
-h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bustext.hide {
+h2.nue-sitetext.hide, h2.pma_signagetext.hide, h2.oxo_packagingtext.hide, h2.journaltext.hide,
+h2.lsstext.hide, h2.walltext.hide {
   display: none !important; }
+
+.nue-sitetext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 29%;
+  left: 49%;
+  top: 0%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
 
 .pma_signagetext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 22%;
+  height: 27%;
   left: 49%;
   top: 0%;
   transform: translate(-50%, 50%);
@@ -432,53 +445,14 @@ h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bust
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.amtraktext {
+.lsstext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 22%;
-  left: 49%;
-  top: 0%;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
-
-.dyson_windowtext {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 65%;
+  height: 95%;
   left: 50%;
   top: 0;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
-
-.cpa_careertext {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 65%;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%); }
-
-.pawstext {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  z-index: 9999;
-  height: 20%;
-  left: 49%;
-  top: 50%;
   transform: translate(-50%, 50%);
   -webkit-transform: translate(-50%, 50%);
   -moz-transform: translate(-50%, 50%);
@@ -489,20 +463,20 @@ h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bust
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 22%;
+  height: 95%;
   left: 50%;
-  top: 50%;
+  top: 0%;
   transform: translate(-50%, 50%);
   -webkit-transform: translate(-50%, 50%);
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-.pma_bustext {
+.walltext {
   position: absolute;
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 69%;
+  height: 60%;
   left: 49%;
   top: 50%;
   transform: translate(-50%, 50%);
@@ -515,7 +489,7 @@ h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bust
   overflow: hidden;
   text-align: center;
   z-index: 9999;
-  height: 172%;
+  height: 160%;
   left: 50%;
   top: 0;
   transform: translate(-50%, 50%);
@@ -523,21 +497,18 @@ h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bust
   -moz-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%); }
 
-	/*
-	.pagenavigaton{
-		clear: left;
-		clear: right;
-	}
+.pagenavigaton {
+  clear: left;
+  clear: right; }
 
-	.previousnext {
-		float: right;
-		margin: 5px 60px 35px 0px;
-	}
+.previousnext {
+  float: right;
+  margin: 5px 60px 35px 0px; }
 
-	.back {
-		float: left;
-		margin: 5px 0px 35px 60px;
-	}*/
+.back {
+  float: left;
+  margin: 5px 0px 35px 60px; }
+
 .FormHeader {
   font-size: 20px;
   font-family: 'Arimo';
@@ -547,10 +518,7 @@ h2.pma_signagetext.hide, h2.dyson_windowtext.hide, h2.pawstext.hide, h2.pma_bust
 .footer {
   clear: left;
   height: 100px;
-  background-color: #e2e3e4;
-  /*		position: absolute;
-  */
-  /*bottom: 0;*/ }
+  background-color: #e2e3e4; }
 
 input {
   margin-bottom: 2px;

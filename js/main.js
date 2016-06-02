@@ -17,7 +17,19 @@ $(document).ready(function(){
 
 
 
-//place mouseover event on pma signage img
+//place mouseover event on web img
+    $('.web_thumbnail').on('mouseenter', function(){
+        $('h2.nue-sitetext').removeClass('hide');
+        $('.web_thumbnail img').animate({opacity: '.2'});
+    });
+
+    //place mouseout event on web img
+    $('.web_thumbnail').on('mouseleave', function(){
+        $('h2.nue-sitetext').addClass('hide');
+        $('.web_thumbnail img').animate({opacity: '1'});
+    });
+
+ //place mouseover event on pma signage img
     $('.pma_signage_thumbnail').on('mouseenter', function(){
         $('h2.pma_signagetext').removeClass('hide');
         $('.pma_signage_thumbnail img').animate({opacity: '.2'});
@@ -29,29 +41,17 @@ $(document).ready(function(){
         $('.pma_signage_thumbnail img').animate({opacity: '1'});
     });
 
- //place mouseover event on amtrak img
-    $('.amtrak_thumbnail').on('mouseenter', function(){
-        $('h2.amtraktext').removeClass('hide');
-        $('.amtrak_thumbnail img').animate({opacity: '.2'});
+
+//place mouseover event on identity img
+    $('.lss_thumbnail').on('mouseenter', function(){
+        $('h2.lsstext').removeClass('hide');
+        $('.lss_thumbnail img').animate({opacity: '.2'});
     });
 
-    //place mouseout event on amtrak img
-    $('.amtrak_thumbnail').on('mouseleave', function(){
-        $('h2.amtraktext').addClass('hide');
-        $('.amtrak_thumbnail img').animate({opacity: '1'});
-    });
-
-
-//place mouseover event on dyson img
-    $('.dyson_window_thumbnail').on('mouseenter', function(){
-        $('h2.dyson_windowtext').removeClass('hide');
-        $('.dyson_window_thumbnail img').animate({opacity: '.2'});
-    });
-
-    //place mouseout event on dyson img
-    $('.dyson_window_thumbnail').on('mouseleave', function(){
-        $('h2.dyson_windowtext').addClass('hide');
-        $('.dyson_window_thumbnail img').animate({opacity: '1'});
+    //place mouseout event on identity img
+    $('.lss_thumbnail').on('mouseleave', function(){
+        $('h2.lsstext').addClass('hide');
+        $('.lss_thumbnail img').animate({opacity: '1'});
 
     });
 
@@ -69,41 +69,19 @@ $(document).ready(function(){
     });
 
 
-//place mouseover event on paws img
-    $('.paws_thumbnail').on('mouseenter', function(){
-        $('h2.pawstext').removeClass('hide');
-        $('.paws_thumbnail img').animate({opacity: '.2'});
-    });
 
-    //place mouseout event on paws img
-    $('.paws_thumbnail').on('mouseleave', function(){
-        $('h2.pawstext').addClass('hide');
-        $('.paws_thumbnail img').animate({opacity: '1'});
-    });
-
-    //place mouseover event on oxo img
+    //place mouseover event on packging img
     $('.oxo_packaging_thumbnail').on('mouseenter', function(){
-        $('h2.pma_bustext').removeClass('hide');
+        $('h2.oxo_packagingtext').removeClass('hide');
         $('.oxo_packaging_thumbnail img').animate({opacity: '.2'});
     });
 
-    //place mouseout event on oxo img
+    //place mouseout event on packaging img
     $('.oxo_packaging_thumbnail').on('mouseleave', function(){
-        $('h2.pma_bustext').addClass('hide');
+        $('h2.oxo_packagingtext').addClass('hide');
         $('.oxo_packaging_thumbnail img').animate({opacity: '1'});
     });
 
-//place mouseover event on bus img
-    $('.pma_bus_thumbnail').on('mouseenter', function(){
-        $('h2.pma_bustext').removeClass('hide');
-        $('.pma_bus_thumbnail img').animate({opacity: '.2'});
-    });
-
-    //place mouseout event on bus img
-    $('.pma_bus_thumbnail').on('mouseleave', function(){
-        $('h2.pma_bustext').addClass('hide');
-        $('.pma_bus_thumbnail img').animate({opacity: '1'});
-    });
 
  //place mouseover event on journal img
     $('.journal_thumbnail').on('mouseenter', function(){
@@ -115,6 +93,18 @@ $(document).ready(function(){
     $('.journal_thumbnail').on('mouseleave', function(){
         $('h2.journaltext').addClass('hide');
         $('.journal_thumbnail img').animate({opacity: '1'});
+    }); 
+
+    //place mouseover event on wall img
+    $('.wall_thumbnail').on('mouseenter', function(){
+        $('h2.walltext').removeClass('hide');
+        $('.wall_thumbnail img').animate({opacity: '.2'});
+    });
+
+    //place mouseout event on wall img
+    $('.wall_thumbnail').on('mouseleave', function(){
+        $('h2.walltext').addClass('hide');
+        $('.wall_thumbnail img').animate({opacity: '1'});
     }); 
 
 
