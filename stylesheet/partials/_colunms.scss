@@ -7,24 +7,22 @@
 	}
 	.column1_half {
 		/*max-width: 50%;*/
-		height: auto;
-		float: left;
+		width: 450px;
 		overflow: hidden;
 		position: relative;
 		display: block;
 /*		border: 1px solid green;
-*/		margin: 20px 0px;
+*/		margin: 20px auto 0 auto;
 	}
 
 	.column2_half {
 		/*max-width: 50%;*/
-/*		height: 300px;
-*/		float: left;
+		width: 450px;
 		overflow: hidden;
 		position: relative;
 		display: block;
 /*		border: 1px solid red;
-*/		margin: 20px 0px;
+*/		margin: 0px auto;
 
 	}
 
@@ -53,7 +51,10 @@
 			max-width: 49%; /* content controls, with a MAX of 49%*/
 			/*width: 49%;*/ /* always 49% regardless of content */
 /*			border: 1px solid red;
-*/		}
+*/		
+		float: left;
+		margin: 20px 0;	
+	}
 
 		.resume_column2_half {
 			width: 60%; /* content controls, with a MAX of 49%*/

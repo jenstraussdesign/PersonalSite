@@ -203,26 +203,23 @@ nav ul li a:active {
 
 .column1_half {
   /*max-width: 50%;*/
-  height: auto;
-  float: left;
+  width: 450px;
   overflow: hidden;
   position: relative;
   display: block;
   /*		border: 1px solid green;
   */
-  margin: 20px 0px; }
+  margin: 20px auto 0 auto; }
 
 .column2_half {
   /*max-width: 50%;*/
-  /*		height: 300px;
-  */
-  float: left;
+  width: 450px;
   overflow: hidden;
   position: relative;
   display: block;
   /*		border: 1px solid red;
   */
-  margin: 20px 0px; }
+  margin: 0px auto; }
 
 .resume_column1_half, .resume_column2_half {
   /*max-width: 50%;*/
@@ -251,7 +248,9 @@ nav ul li a:active {
     /*width: 49%;*/
     /* always 49% regardless of content */
     /*			border: 1px solid red;
-    */ }
+    */
+    float: left;
+    margin: 20px 0; }
 
   .resume_column2_half {
     width: 60%;
@@ -485,6 +484,60 @@ h2.lsstext.hide, h2.walltext.hide {
   -ms-transform: translate(-50%, 50%); }
 
 .journaltext {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 160%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.copy1 {
+  /*		position: absolute;
+  */
+  overflow: hidden;
+  z-index: 9999;
+  height: 450px;
+  left: 49%;
+  top: 0%; }
+
+.copy2 {
+  overflow: hidden;
+  height: 450px;
+  left: 50%;
+  top: 0; }
+
+.copy3 {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 160%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.copy4 {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+  height: 160%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%); }
+
+.copy4 {
   position: absolute;
   overflow: hidden;
   text-align: center;
