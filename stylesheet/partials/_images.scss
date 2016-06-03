@@ -5,7 +5,7 @@
 		 padding-top: 10px;
 
 
-		 @include breakpoint(medium) {
+		 @include breakpoint(large) {
 			display: block;
 		 }
 
@@ -36,13 +36,19 @@
 
 	#dog{
 		position: absolute;
-		max-width: 89px;
-		top: 6%;
+		max-width: 85px;
+		top: 7%;
 		right: 16%;
+		display: none;
+
+
+		 @include breakpoint(large) {
+			display: block;
+		 }
 
 	}
 
-		.thumbnails {
+	/*	.thumbnails {
 		font-size: 0;
 	}
 
@@ -51,7 +57,7 @@
 		height: 100%;
 		position: relative;
 	}
-
+*/
 	
 
 	.aboutmeimage {

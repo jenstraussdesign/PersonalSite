@@ -7,7 +7,7 @@
 	}
 	.column1_half {
 		/*max-width: 50%;*/
-		width: 450px;
+		width: 480px;
 		overflow: hidden;
 		position: relative;
 		display: block;
@@ -17,7 +17,7 @@
 
 	.column2_half {
 		/*max-width: 50%;*/
-		width: 450px;
+		width: 480px;
 		overflow: hidden;
 		position: relative;
 		display: block;
@@ -37,7 +37,7 @@
 */		margin: 20px 10px;
 	}
 
-	@include breakpoint(medium){
+	@include breakpoint(large){
 		.row {
 			margin: 0 auto;
 /*			border: 1px solid blue;
