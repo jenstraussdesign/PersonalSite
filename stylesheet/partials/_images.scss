@@ -4,12 +4,43 @@
 		 margin: 0 auto;
 		 padding-top: 10px;
 
+
 		 @include breakpoint(medium) {
 			display: block;
 		 }
 
 	}
 
+	.illustration_header{
+		position: relative;
+		
+		#dog {
+			transition: transform 2s;
+		}
+
+		.st0 {
+			fill: #6CAC44;
+			transition: all 2s;
+		}
+		
+		&:hover {
+			#dog{
+				transform: rotate(-35deg);
+			}
+
+			.st0 {
+				fill: brown;
+			}
+		}
+	}
+
+	#dog{
+		position: absolute;
+		max-width: 89px;
+		top: 6%;
+		right: 16%;
+
+	}
 
 		.thumbnails {
 		font-size: 0;
